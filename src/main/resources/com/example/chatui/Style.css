@@ -1,0 +1,13 @@
+.mess-me{
+    -fx-background-color:#416BF5;
+    -fx-background-radius: 16px 0px 16px 16px;
+    -fx-padding:0 4px 0px 12px;
+    -fx-text-fill:white;
+}
+.mess-you{
+    -fx-background-color:#DA5959;
+    -fx-background-radius: 0px 16px 16px 16px;
+    -fx-padding: 0 4px 0px 12px;
+    -fx-text-fill:white;
+
+}

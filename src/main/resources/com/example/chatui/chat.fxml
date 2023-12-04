@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatui.chatController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="320.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatui.chatController">
    <children>
       <HBox fx:id="timeNavbar" alignment="CENTER" prefHeight="26.0" prefWidth="320.0">
          <children>
@@ -86,7 +86,7 @@
                   <Image url="@img/photo.png" />
                </image>
             </ImageView>
-            <TextField prefHeight="31.0" prefWidth="208.0" promptText="Your massage" />
+            <TextField prefHeight="31.0" prefWidth="208.0" promptText="Your massage" style="-fx-background-radius: 12;" />
             <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@img/sent.png" />
@@ -99,5 +99,15 @@
             </ImageView>
          </children>
       </HBox>
+      <AnchorPane layoutY="95.0" prefHeight="426.0" prefWidth="320.0" style="-fx-background-color: #F8E3FC;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="131.0" layoutY="14.0" prefHeight="24.0" prefWidth="51.0" style="-fx-background-color: white; -fx-background-radius: 15;" text="Today" />
+            <Label layoutX="135.0" layoutY="58.0" prefHeight="35.0" prefWidth="152.0" styleClass="mess-me" text="Let's going out tonight" />
+            <Label layoutX="72.0" layoutY="102.0" prefHeight="51.0" prefWidth="214.0" styleClass="mess-me" text="I already buy 2 tickets for Fanstastic Beast for us" wrapText="true" />
+            <Label layoutX="12.0" layoutY="168.0" prefHeight="51.0" prefWidth="266.0" styleClass="mess-you" text="Alright, come to my home before going tonight" wrapText="true" />
+            <Label layoutX="14.0" layoutY="223.0" prefHeight="35.0" prefWidth="198.0" styleClass="mess-you" text="Let me prepare myself first" />
+            <Label layoutX="235.0" layoutY="259.0" prefHeight="42.0" prefWidth="51.0" styleClass="mess-me" text="Okey" />
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>
